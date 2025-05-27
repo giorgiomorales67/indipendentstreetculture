@@ -1,0 +1,893 @@
+body {
+    background-color: black;
+    font-family: "Inter";
+    color: white;
+    margin: 0;
+    max-width: 90%;
+    margin: auto;
+    padding: 60px;
+    height: 100%;
+ }
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.header {
+    background-color: #000;
+    justify-content: center;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 30px 60px;
+}
+ .marchio {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+
+
+.video {           /*video nella home*/
+    max-width: 1420px;
+    height: 1100px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.intro, .introtesto {       /*ACAB + testo*/
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    max-width: 600px;
+}
+
+.testosuimmagine {      /*ACAB + testo + immagine di sfondo*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/IMG/Home2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testosuimmagine-2 ul {     /*hamburger menù*/
+    list-style-type: "- "; 
+    padding-left: 20px;
+    font-size: 52px;
+    color: white;
+}
+  
+.testosuimmagine-2 ul li a {
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 30px;
+    color: white;
+    transition: color 0.3s ease;
+    
+}
+
+.testosuimmagine-2 ul li a:hover {
+    color:#F1C40F;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.testosuimmagine-2 {        /*hamburger menù + immagine di sfondo*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/IMG/Hamburger.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer  {
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;   
+    margin: 64px 64px;
+    display: flex;
+    border-top: solid 1px white;
+    padding: 32px;
+}
+
+.footer p {
+    font-size: 12px;
+    max-width: 250px;
+    font-weight: 300;
+    
+}
+
+.footer nav {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+
+}
+
+.footer nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 16px;
+    margin: 18px;
+    margin-bottom: -36px;
+    padding: 16px;
+
+}
+
+.footer nav a:hover {
+    color: darkkhaki;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+
+.galleria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    max-width: 100%;   
+    margin: 16px;
+    padding: 8px;
+}
+
+.galleria img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+}
+
+.galleria img:hover {
+    transform: scale(1.05);
+    z-index: 10;
+    transition: 0.3s ease;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 26px;
+}
+
+
+
+.blocco1banksy img{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    margin-left: 120px;    
+}
+
+.blocco1banksy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.titolimg h3 {
+    display: flex;
+    margin-left: 90px;
+    padding: 40px;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+
+.titolimg {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+
+
+.testi p {
+    width: 70%;
+    padding: 40px;
+        
+}
+
+.blocco2banksy img{
+    display: flex;
+    height: 300px;
+    max-width: 300px;
+    margin-left: 120px;    
+    
+}
+
+.blocco2banksy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 90px;
+}
+
+.titolimg2 h3 {
+    display: flex;
+    margin-left: 90px;
+    padding: 24px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+.titolimg2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+
+
+.testi2 p {
+    width: 70%;
+    padding: 40px;
+}
+
+.blocco3banksy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 90px;
+}
+
+.titolimg3 h4 {
+    padding: 24px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+
+.titolimg3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+
+
+.testi3 p {
+    width: 70%;
+    padding: 30px;
+}
+
+.titolo-storia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;   
+}
+
+.titolo-street h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;   
+}
+
+.titolo-street h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -12px;   
+}
+
+.sfondo4 {      /*3 foto sotto header*/
+    display: flex;              
+    justify-content: center;    
+    gap: 10px;    
+    margin-top: 32px;              
+  }
+   
+.sfondo4 img {    /*3 foto sotto header*/
+    width: 300px;              
+    height: 100%;            
+    object-fit: cover;          
+  }
+
+.blocco1banksy h1 {
+    padding-left: 120px;
+    padding-top: 40px;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.blocco1banksy h2 {
+    padding-left: 120px;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: -14px;
+}
+
+.foto-storia2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    margin: 20;
+    height: 100%;
+}
+
+.blocco2banksy h1 {
+    display: flex;
+    padding-left: 110px;
+    padding-top: 40px;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.blocco2banksy h2 {
+    padding-left: 110px;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 100px;
+
+}
+
+.blocco2banksy h5 {
+    padding-left: 110px;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: -8px;
+}
+
+.titolimg3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 110px;
+    gap: 10px;
+}
+
+.blocco3banksy h1,
+.blocco3banksy h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.blocco3banksy h2 {
+    font-size: 26px;
+    font-weight: 500;
+   
+}
+.blocco3banksy h1 {
+    margin-top: 60px;
+}
+
+.videotecniche {
+    margin-top: 68px;
+    display: flex;              
+    justify-content: center;    
+    gap: 10px;  
+    
+}
+
+.titolimg h6 {
+    margin-left: 90px;
+    padding: 24px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: -12px;
+
+}
+
+.titolimg img {
+    max-width: 40%;
+    height: auto;
+}
+
+
+
+.blocco2banksy h1{
+    font-size: 32px;
+    font-weight: 600;   
+}
+
+.arturo h1 {
+    padding-left: 120px;
+    padding-top: 40px;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.arturo h2 {
+    padding-left: 120px;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: -14px;
+}
+
+.arturo h3 {   
+    margin-left: 100px;
+    padding: 24px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: -12px;
+}
+
+.arturo img {
+    max-width: 450px;
+    height: auto;
+    margin: 0 auto;
+}  
+
+.arturo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+.pollo h1 {
+    padding-left: 120px;
+    padding-top: 40px;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.pollo h2 {
+    padding-left: 120px;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: -14px;
+}
+
+.pollo h3 {   
+    margin-left: 100px;
+    padding: 24px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: -12px;
+}
+
+.pollo2 img {
+    max-width: 350px;
+    height: auto;
+    margin: 120px;
+}  
+
+.pollo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nascosto img {
+    max-width: 100px;
+    opacity: 0.4;
+    margin-top: 200px;
+}
+    
+
+.pollo4 h1 {
+    padding-left: 120px;
+    padding-top: 40px;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.pollo4 h2 {
+    padding-left: 120px;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: -14px;
+}
+
+.pollo4 h3 {   
+    margin-left: 100px;
+    padding: 24px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: -12px;
+}
+
+.pollo3 img {
+    max-width: 350px;
+    height: auto;
+    margin-left: 120px;
+    margin-top: 22px;
+}  
+
+.pollo3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.foto-street {      /*3 foto sotto header*/
+    display: flex;              
+    justify-content: center;    
+    gap: 10px; 
+    margin-top: 32px;                 
+}
+   
+.foto-street img {    /*3 foto sotto header*/
+    width: 400px;              
+    height: 100%;            
+    object-fit: cover;          
+}
+   
+.anastasia img {
+    max-width: 400px;
+    height: auto;
+    padding: 12px; 
+
+}
+
+.anastasia2 img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    max-width: 900px;
+    height: auto;
+    margin: 38px auto;
+
+
+}
+
+.titolimg3 img {
+    max-width: 40%;
+    height: auto;
+    margin: 0;
+}
+
+.mob1 img {
+    max-width: 60%;
+    height: auto;
+}
+
+p {
+    max-width: 600px;
+    gap: 10px;  
+}
+
+
+.testi p {
+    margin: -35px 0px;
+}
+
+
+.testi2 p {
+    margin: -35px 0px;
+}
+
+
+.testi3 p {
+    margin: -35px 0px;
+}
+
+.testi {
+    margin-top: 70px;
+}
+
+.testi2 {
+    margin-top: 70px;
+}
+
+.testi3 {
+    margin-top: 70px;
+    }
+
+.testina p {
+        width: 70%;
+        padding-top: 50px;
+        
+            
+}
+
+    
+
+.titoli-artisti h1 {
+    
+        text-align: center;
+    
+        padding-top: 50px;
+    
+}
+    
+.galleria-artisti {
+    
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    gap: 16px;
+    
+    max-width: 100%;   
+    
+    margin: 16px;
+    
+    padding: 8px;
+    
+}
+    
+.galleria-artisti img {
+    
+        height: 400px;
+    
+        width: 100%;
+    
+        object-fit: cover;
+    
+        display: flex;
+    
+}
+    
+.galleria-artisti div:hover {
+    
+      transform: scale(1.05);
+    
+      z-index: 10;
+    
+}
+    
+.galleria-artisti p {
+    
+        font-size: 20px;
+    
+        color: #000;;
+    
+        margin: 0;
+    
+        padding: 20px;
+    
+        background-color: #F1C40F;
+    
+        text-align: center;
+    
+        font-weight: bold;
+    
+}
+    
+.galleria-artisti a {
+    
+    text-decoration: none;
+    
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        height: auto;
+        padding: 0;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        height: 100%;
+        
+
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .video {
+        max-width: 100%;
+        height: auto;
+        padding-top: 50px;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .footer {
+        margin: 32px 16px;
+      }
+     
+      .footer p {
+        font-size: 12px;
+        max-width: 100%;
+        margin-top: 8px;
+      }
+     
+      .footer nav {
+        width: 100%;
+      }
+     
+      .footer nav a {
+        margin: 8px  0;
+        padding: 8px 0;
+        font-size: 12px;
+    }
+
+
+    p {
+        max-width: 400px;
+        margin: auto;
+        font-size: 13px;
+    }
+
+    .anastasia img  {
+        margin: 0 auto;
+        width: 250px;
+        height: auto; 
+           
+    }
+
+    .anastasia2 img {
+        margin: 12px auto;
+        width: 450px;
+        height: auto;
+    }
+
+
+    .titolimg2 img {
+        margin: 0 auto;
+        width: 200px;
+        height: auto;
+    }
+    .titolimg img {
+        width: 300px;
+        height: auto;
+        
+    }
+    
+    
+
+    .blocco1banksy h1, .blocco2banksy h1, .blocco3banksy h1, .arturo h1, .pollo2 h1, .pollo4 h1{
+        padding-left: 30px;
+        font-size: 22px;
+    }
+
+    .titolimg h6 {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .blocco1banksy h2, .blocco2banksy h2, .blocco3banksy h2, .arturo h2, .pollo2 h2, .pollo4 h2{
+        padding-left: 30px;
+        font-size: 22px;
+    }
+    
+    .blocco1banksy h3, .blocco2banksy h3, .blocco3banksy h3, .arturo h3 {
+        padding-left: 30px;
+        font-size: 22px;
+    }
+
+    .titolimg img {
+        max-width: 200px;
+        height: auto;
+        margin-left: 30px;
+    }
+    .blocco2banksy img{
+        height: auto;
+        max-width: 300px;
+    }
+    .galleria-artisti {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+      }
+     
+      .galleria-artisti img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        margin: 0;
+      }
+     
+      .galleria-artisti p {
+        font-size: 18px;
+        padding: 20px 0;
+        background-color: #F1C40F;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+      }
+     
+      .galleria-artisti div:hover {
+        transform: none;    
+      }
+
+      .foto-street img {
+        aspect-ratio: 1/1;
+        height: auto;
+        max-width: 90%;
+        padding-top: 80px;
+        height: auto;
+        padding-left: 10px;
+
+      }
+
+      .galleria {
+        gap: 4px;                            
+        padding: 8px;
+        margin: 0 auto;
+      }
+     
+      .galleria img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;                   /* questo è per tenere le img quadrate */
+        object-fit: cover;
+        display: block;
+      }
+     
+      .galleria img:hover {
+        transform: none;    
+      } 
+
+      .titolimg2 h5 {
+        font-size: 18px;
+        margin-left: -70px;
+      }
+
+      
+
+     .sfondo4 img {
+        aspect-ratio: 1/1;
+        max-width: 90%;
+        height: auto;
+        padding-left: 12px;
+     }
+
+     .blocco1banksy h3 {
+        padding-top: 120px;
+        margin-left: 30px;
+        
+     }
+
+     .foto-storia2 img {
+        max-width: 650px;
+        height: auto;
+        padding-top: 100px;
+         }
+
+         .titolimg h3, .titolimg2 h3 {
+            margin: 0;
+        }
+     
+        .titolimg3 {
+            padding-left: 0;
+        }
+
+        .testina p { 
+            padding-top: 130px;
+        }
+
+        .arturo h3 {  
+            margin-left: 0;
+            padding: 24px;
+            font-size: 22px;
+            font-weight: 400;
+            margin-top: 50px;
+        }
+         
+        .arturo img {
+            max-width: 450px;
+            height: auto;
+            margin-left: -40px;
+        }  
+
+        .pollo2 img {
+            max-width: 200px;
+            height: auto;
+            margin: 30px;
+        }
+
+        .pollo3 img {
+            max-width: 200px;
+            height: auto;
+            margin-left: 30px;
+        }
+
+   
+}
+
+
+
+
+
+
