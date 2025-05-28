@@ -3,8 +3,10 @@ body {
     font-family: "Inter";
     color: white;
     margin: 0;
+    margin: auto;
+    padding-top: 64px;
     height: 100%;
-}
+ }
 header {
     position: fixed;
     top: 0;
@@ -458,6 +460,12 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.nascosto img {
+    max-width: 100px;
+    opacity: 0.4;
+    margin-top: 200px;
+}
     
 
 .pollo4 h1 {
@@ -498,7 +506,7 @@ h3 {
     display: flex;              
     justify-content: center;    
     gap: 10px; 
-    padding-top: 96px;                 
+    margin-top: 32px;                 
 }
    
 .foto-street img {    /*3 foto sotto header*/
@@ -536,6 +544,12 @@ h3 {
     height: auto;
 }
 
+p {
+    max-width: 600px;
+    gap: 10px;  
+}
+
+
 .testi p {
     margin: -35px 0px;
 }
@@ -563,17 +577,19 @@ h3 {
     }
 
 .testina p {
-    width: 70%;
-    padding-top: 50px;           
+        width: 70%;
+        padding-top: 50px;
+        
+            
 }
 
     
 
 .titoli-artisti h1 {
     
-    text-align: center;
+        text-align: center;
     
-    padding-top: 50px;
+        padding-top: 50px;
     
 }
     
@@ -637,16 +653,12 @@ h3 {
     
 }
 
-@media (max-width: 768px) {
+   
+@media screen and (max-width: 768px) {
+
     body {
         margin: 0;
-        height: auto;
-        padding: 0;
-        grid-template-columns: 1fr;
-        max-width: 100%;
-        height: 100%;
-        
-
+        padding: 20;
     }
 
     img {
@@ -669,7 +681,6 @@ h3 {
      
     .footer p {
         font-size: 12px;
-        max-width: 100%;
         margin-top: 8px;
       }
      
@@ -679,71 +690,12 @@ h3 {
      
     .footer nav a {
         margin: 8px  0;
-        padding: 8px 0;
+        padding: 0;
         font-size: 12px;
+        flex-direction: column;
+        display: flex;
     }
 
-
-    p {
-        max-width: 400px;
-        margin: auto;
-        font-size: 13px;
-    }
-
-    .anastasia img  {
-        margin: 0 auto;
-        width: 250px;
-        height: auto; 
-           
-    }
-
-    .anastasia2 img {
-        margin: 12px auto;
-        width: 450px;
-        height: auto;
-    }
-
-
-    .titolimg2 img {
-        margin: 0 auto;
-        width: 200px;
-        height: auto;
-    }
-    .titolimg img {
-        width: 300px;
-        height: auto;
-        
-    }
-    
-    .blocco1banksy h1, .blocco2banksy h1, .blocco3banksy h1, .arturo h1, .pollo2 h1, .pollo4 h1{
-        padding-left: 30px;
-        font-size: 22px;
-    }
-
-    .titolimg h6 {
-        font-size: 22px;
-        margin: 0;
-    }
-
-    .blocco1banksy h2, .blocco2banksy h2, .blocco3banksy h2, .arturo h2, .pollo2 h2, .pollo4 h2{
-        padding-left: 30px;
-        font-size: 22px;
-    }
-    
-    .blocco1banksy h3, .blocco2banksy h3, .blocco3banksy h3, .arturo h3 {
-        padding-left: 30px;
-        font-size: 22px;
-    }
-
-    .titolimg img {
-        max-width: 200px;
-        height: auto;
-        margin-left: 30px;
-    }
-    .blocco2banksy img{
-        height: auto;
-        max-width: 300px;
-    }
     .galleria-artisti {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
@@ -772,16 +724,6 @@ h3 {
         transform: none;    
       }
 
-      .foto-street img {
-        aspect-ratio: 1/1;
-        height: auto;
-        max-width: 90%;
-        padding-top: 80px;
-        height: auto;
-        padding-left: 10px;
-
-      }
-
       .galleria {
         gap: 4px;                            
         padding: 8px;
@@ -799,73 +741,134 @@ h3 {
       .galleria img:hover {
         transform: none;    
       } 
+     
+      .blocco1banksy,
+      .blocco2banksy,
+      .blocco3banksy,
+      .arturo,
+      .pollo,
+      .pollo3 {
+        grid-template-columns: 1fr;
 
-      .titolimg2 h5 {
-        font-size: 18px;
-        margin-left: -70px;
+      }
+     
+      .blocco1banksy img,
+      .blocco2banksy img,
+      .pollo2 img,
+      .pollo3 img,
+      .anastasia img,
+      .titolimg img,
+      .titolimg3 img {
+        width: 100%;
+        height: auto;
+        margin-left: 64px;
+        
+        
+      }
+     
+      .titolimg h3,
+      .titolimg2 h3,
+      .titolimg h6,
+      .arturo h1, .arturo h2, .arturo h3,
+      .pollo h1, .pollo h2, .pollo h3,
+      .pollo4 h1, .pollo4 h2, .pollo4 h3,
+      .blocco1banksy h1, .blocco1banksy h2,
+      .blocco2banksy h1, .blocco2banksy h2, .blocco2banksy h5,
+      .blocco3banksy h1, .blocco3banksy h2,
+      .titolimg3 h4,
+      .titolo-street h1, .titolo-street h2,
+      .titolo-storia {
+        text-align: left;
+        width: 450px;
+        margin: 0 auto;
+        padding: 16px;
+        
       }
 
-      
-
-     .sfondo4 img {
-        aspect-ratio: 1/1;
-        max-width: 90%;
-        height: auto;
-        padding-left: 12px;
-     }
-
-     .blocco1banksy h3 {
-        padding-top: 120px;
-        margin-left: 30px;
+    .titolimg3 h1 {
+        margin: 0;
+        text-align: left;
         
-     }
+    }
 
-     .foto-storia2 img {
-        max-width: 650px;
+    .titolimg3, .blocco3banksy h2 {
+        padding: 16px;
+        margin: 0 auto;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+
+    .sfondo4 {    /*3 foto sotto header*/
+          grid-template-columns: 1fr; 
+          display: grid;
+          aspect-ratio: 1/1;  
+          margin: 16px; 
+      }
+
+      .sfondo4 img {
         height: auto;
-        padding-top: 100px;
-         }
-
-         .titolimg h3, .titolimg2 h3 {
-            margin: 0;
+        gap: 0;
+        object-fit: cover;
         }
+      
+      p,
+      .testi p,
+      .testi2 p,
+      .testi3 p, .testina p{
+        text-align: left;
+        width: 450px;
+      }
+
+      .testi, .testi2, .testi3, .testina {
+        padding: 16px;
+        margin: 16px;
+
+      }
      
-        .titolimg3 {
-            padding-left: 0;
-        }
+      .testosuimmagine,
+      .testosuimmagine-2 {
+        height: auto;
+        padding: 24px;
+        text-align: left;
+      }
+     
+      .testosuimmagine-2 ul {
+        font-size: 36px;
+        padding-left: 0;
+      }
+     
+      .testosuimmagine-2 ul li a {
+        margin-bottom: 18px;
+      }
+     
+      .foto-street,
+      .sfondo4,
+      .videotecniche {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+     
+      .foto-street img,
+      .sfondo4 img {
+        width: 100%;
+        height: auto;
+      }
 
-        .testina p { 
-            padding-top: 130px;
-        }
+      h1, h2, h3, h4, h5, h6 {
+        text-align: left;
+        margin: 10px 0;
+      }
 
-        .arturo h3 {  
-            margin-left: 0;
-            padding: 24px;
-            font-size: 22px;
-            font-weight: 400;
-            margin-top: 50px;
-        }
-         
-        .arturo img {
-            max-width: 450px;
-            height: auto;
-            margin-left: -40px;
-        }  
-
-        .pollo2 img {
-            max-width: 200px;
-            height: auto;
-            margin: 30px;
-        }
-
-        .pollo3 img {
-            max-width: 200px;
-            height: auto;
-            margin-left: 30px;
-        }
+      .testina p {
+        margin: 0 auto;
+      }
+}
 
    
-}
+
 
 
 
