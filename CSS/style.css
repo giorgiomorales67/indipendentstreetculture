@@ -3,11 +3,8 @@ body {
     font-family: "Inter";
     color: white;
     margin: 0;
-    max-width: 90%;
-    margin: auto;
-    padding: 60px;
     height: 100%;
- }
+}
 header {
     position: fixed;
     top: 0;
@@ -461,12 +458,6 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
-.nascosto img {
-    max-width: 100px;
-    opacity: 0.4;
-    margin-top: 200px;
-}
     
 
 .pollo4 h1 {
@@ -507,7 +498,7 @@ h3 {
     display: flex;              
     justify-content: center;    
     gap: 10px; 
-    margin-top: 32px;                 
+    padding-top: 96px;                 
 }
    
 .foto-street img {    /*3 foto sotto header*/
@@ -545,12 +536,6 @@ h3 {
     height: auto;
 }
 
-p {
-    max-width: 600px;
-    gap: 10px;  
-}
-
-
 .testi p {
     margin: -35px 0px;
 }
@@ -578,19 +563,17 @@ p {
     }
 
 .testina p {
-        width: 70%;
-        padding-top: 50px;
-        
-            
+    width: 70%;
+    padding-top: 50px;           
 }
 
     
 
 .titoli-artisti h1 {
     
-        text-align: center;
+    text-align: center;
     
-        padding-top: 50px;
+    padding-top: 50px;
     
 }
     
@@ -684,17 +667,17 @@ p {
         margin: 32px 16px;
       }
      
-      .footer p {
+    .footer p {
         font-size: 12px;
         max-width: 100%;
         margin-top: 8px;
       }
      
-      .footer nav {
+    .footer nav {
         width: 100%;
       }
      
-      .footer nav a {
+    .footer nav a {
         margin: 8px  0;
         padding: 8px 0;
         font-size: 12px;
@@ -732,8 +715,6 @@ p {
         
     }
     
-    
-
     .blocco1banksy h1, .blocco2banksy h1, .blocco3banksy h1, .arturo h1, .pollo2 h1, .pollo4 h1{
         padding-left: 30px;
         font-size: 22px;
