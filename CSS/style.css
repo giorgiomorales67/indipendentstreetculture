@@ -870,8 +870,22 @@ p {
       .foto-street img {
         max-width: 350px;
         height: auto;
-        margin: 0 auto;
-        padding-left: 90px;
+        padding-left: 100px;
+      }
+
+      .titolimg img {
+        margin: auto;
+        max-width: 250px;
+      }
+      .titolimg2 img {
+        margin: auto;
+        max-width: 250px;
+      }
+
+      .pollo4 img {
+        height: auto;
+        max-width: 250px;
+        padding-left: 100px;
       }
 }
 
