@@ -425,9 +425,6 @@ h3 {
     grid-template-columns: 1fr 1fr;
 }
 
-
-
-
 .pollo h1 {
     padding-left: 120px;
     padding-top: 40px;
@@ -460,13 +457,6 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
-.nascosto img {
-    max-width: 100px;
-    opacity: 0.4;
-    margin-top: 200px;
-}
-    
 
 .pollo4 h1 {
     padding-left: 120px;
@@ -762,6 +752,7 @@ p {
         width: 100%;
         height: auto;
         margin-left: 64px;
+        padding-top: 18px;
         
         
       }
@@ -781,7 +772,9 @@ p {
         text-align: left;
         width: 450px;
         margin: 0 auto;
-        padding: 16px;
+        padding-left: 14px;
+        font-size: 22px;
+        font-weight: 530;
         
       }
 
@@ -792,7 +785,7 @@ p {
     }
 
     .titolimg3, .blocco3banksy h2 {
-        padding: 16px;
+        padding: 0 16px;
         margin: 0 auto;
     }
 
@@ -860,7 +853,7 @@ p {
 
       h1, h2, h3, h4, h5, h6 {
         text-align: left;
-        margin: 10px 0;
+        margin: 0;
       }
 
       .testina p {
@@ -887,6 +880,119 @@ p {
         max-width: 250px;
         padding-left: 100px;
       }
+
+      .testosuimmagine-2 li {
+        font-size: 46px;
+        margin: 0 auto;
+        padding: 12px;
+      }
+
+      .foto-storia2 {
+        max-width: 1000px;
+        height: auto;
+        padding-top: 32px;
+      }
+
+      .foto-street {
+        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+      }
+
+      .foto-street img {
+        aspect-ratio: 1/1;
+
+      }
+
+      .foto-street {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+      }
+     
+      .foto-street img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        margin: 0 auto;
+        padding: 0;
+      }
+
+      .sfondo4 {      
+        display: grid;
+        grid-template-columns: 1fr 1fr;   
+        gap: 8;
+        
+      }
+       
+    .sfondo4 img {   
+        width: 250px;              
+        height: auto;            
+        object-fit: cover;  
+        aspect-ratio: 1/1;  
+              
+      }
+
+      p {
+        font-size: 16px;
+        padding: 12px;
+      }
+
+      .titolo-storia h1 {
+        font-size: 34px;
+        padding-top: 16px;
+            }
+
+        .arturo2 img {
+            margin: 0 auto;
+            padding: 0;
+            max-width: 450px;
+            justify-content: center;
+            display: block;
+        }
+
+        .pollo2 img {
+            margin: 0 auto;
+            padding: 0;
+            max-width: 300px;
+            height: auto;
+            justify-content: center;
+            display: block;
+            padding-top: 24px;
+
+        }
+        .arturo2 h3 {
+            padding: 0;
+            margin: 0 auto;   
+        }
+
+        .pollo4 img {
+            padding: 12px;
+            margin: auto;
+            aspect-ratio: 1/1;
+            height: auto;
+            object-fit: cover;
+            width: 220px;            
+            }
+
+
+        .pollo4 {
+            margin: 0 auto;
+        }
+
+        .blocco1banksy h3 {
+          margin: 0 auto;
+          margin-top: 42px; 
+    
+        }
+
+        .susy h3 {
+            padding-left: 16px;
+            font-size: 28px;
+            font-weight: 600;
+            padding-top: 36px;
+        }
 }
 
    
